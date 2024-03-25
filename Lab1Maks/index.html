@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+</head>
+
+<body>
+  <div>
+    <h2>Калькулятор</h2>
+    <input type="number" id="number1">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="number2">
+    <button onclick="calculate()">Розрахувати</button>
+    <p id="result"></p>
+
+  </div>
+
+  <div>
+    <h2>Генератор випадкових паролів</h2>
+    <div id="password"></div>
+    <button onclick="generatePassword(12)">Згенерувати пароль</button>
+  </div>
+
+  <div>
+    <h2>Обчислити кількість введених слів у тексті</h2>
+    <textarea id="textInput" rows="4" cols="50"></textarea>
+    <button onclick="countWords()">Обчислити кількість слів</button>
+    <p id="wordCount">Кількість слів: 0</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
